@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Calculator"
+             x:Class="Calculator.MainPage">
+
+    <Grid BackgroundColor="#24252A">
+            <!--BackgroundColor="red"-->
+            <Grid Grid.Row="0" Margin="0,0,0,100">
+                <StackLayout Orientation="Vertical" HorizontalOptions="EndAndExpand" Margin="20,0">
+                    <!--Input Lable-->
+                    <Label
+                    Text="24 + 25"
+                    FontSize="Large"
+                    TextColor="#2ABB9B"
+                    />
+                    <!--Output label-->
+                    <Label
+                    Text="49"
+                    FontSize="48"
+                    TextColor="White"
+                    HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+            </Grid>
+            <!--BackgroundColor="blue"-->
+            <Grid Grid.Row="1"  Margin="0,-100,0,0">
+                <StackLayout Orientation="Vertical" Margin="20">
+                    <!--Row 1-->
+                    <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                        <Button Text="C" TextColor="White" BackgroundColor="#2B2C31" FontSize="Large" WidthRequest="50" HeightRequest="50" HorizontalOptions="FillAndExpand"/>
+                        <Button Text="+/-" TextColor="White" BackgroundColor="#2B2C31" FontSize="Large" WidthRequest="50" HeightRequest="50" HorizontalOptions="FillAndExpand"/>
+                        <Button Text="%" TextColor="White" BackgroundColor="#2B2C31" FontSize="Large" WidthRequest="50" HeightRequest="50" HorizontalOptions="FillAndExpand"/>
+                    <Button Text="/" TextColor="White" BackgroundColor="#2ABB9B" FontSize="Large" WidthRequest="50" HeightRequest="50" HorizontalOptions="FillAndExpand"/>
+                    </StackLayout>
+                    <!--Row 2-->
+                    <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                        <Button Text="7" TextColor="White" BackgroundColor="#2B2C31" FontSize="Large" WidthRequest="50" HeightRequest="50" HorizontalOptions="FillAndExpand"/>
+                        <Button Text="8" TextColor="White" BackgroundColor="#2B2C31" FontSize="Large" WidthRequest="50" HeightRequest="50" HorizontalOptions="FillAndExpand"/>
+                        <Button Text="9" TextColor="White" BackgroundColor="#2B2C31" FontSize="Large" WidthRequest="50" HeightRequest="50" HorizontalOptions="FillAndExpand"/>
+                        <Button Text="*" TextColor="White" BackgroundColor="#2ABB9B" FontSize="Large" WidthRequest="50" HeightRequest="50" HorizontalOptions="FillAndExpand"/>
+                    </StackLayout>
+                    <!--Row 3-->
+                    <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                        <Button Text="4" TextColor="White" BackgroundColor="#2B2C31" FontSize="Large" WidthRequest="50" HeightRequest="50" HorizontalOptions="FillAndExpand"/>
+                        <Button Text="5" TextColor="White" BackgroundColor="#2B2C31" FontSize="Large" WidthRequest="50" HeightRequest="50" HorizontalOptions="FillAndExpand"/>
+                        <Button Text="6" TextColor="White" BackgroundColor="#2B2C31" FontSize="Large" WidthRequest="50" HeightRequest="50" HorizontalOptions="FillAndExpand"/>
+                        <Button Text="-" TextColor="White" BackgroundColor="#2ABB9B" FontSize="Large" WidthRequest="50" HeightRequest="50" HorizontalOptions="FillAndExpand"/>
+                    </StackLayout>
+                    <!--Row 4-->
+                    <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                        <Button Text="1" TextColor="White" BackgroundColor="#2B2C31" FontSize="Large" WidthRequest="50" HeightRequest="50" HorizontalOptions="FillAndExpand"/>
+                        <Button Text="2" TextColor="White" BackgroundColor="#2B2C31" FontSize="Large" WidthRequest="50" HeightRequest="50" HorizontalOptions="FillAndExpand"/>
+                        <Button Text="3" TextColor="White" BackgroundColor="#2B2C31" FontSize="Large" WidthRequest="50" HeightRequest="50" HorizontalOptions="FillAndExpand"/>
+                        <Button Text="+" TextColor="White" BackgroundColor="#2ABB9B" FontSize="Large" WidthRequest="50" HeightRequest="50" />
+                    </StackLayout>
+                    <!--Row 5-->
+                    <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Button Text="0" TextColor="White" BackgroundColor="#2B2C31" FontSize="Large" WidthRequest="50" HeightRequest="50" />
+                    <Button Text="." TextColor="White" BackgroundColor="#2B2C31" FontSize="Large" WidthRequest="50" HeightRequest="50" />
+                    <Button Text="=" TextColor="White" BackgroundColor="#2ABB9B" FontSize="Large"  WidthRequest="50" HeightRequest="50" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand"/>
+
+                    </StackLayout>
+
+                </StackLayout>
+            </Grid>
+
+        </Grid>
+
+    </ContentPage>
